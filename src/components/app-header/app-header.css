@@ -1,0 +1,19 @@
+
+
+nav ul {
+    list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    background-color: rgb(96 139 168 / 0.2);
+    padding: 10px;
+    display: block;
+  }
