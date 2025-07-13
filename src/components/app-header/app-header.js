@@ -1,4 +1,5 @@
 import './app-header.css' 
+import logo from '../../images/logo.png'
 
 import {Component} from 'react'
 
@@ -13,8 +14,8 @@ class AppHeader extends Component {
                     <nav className='head-nav'>
                    
                         <ul className='list-nav'>
-                        <img src="" alt="logo" />
-                            <li><a href="#">Coffee House</a></li>
+                            <div></div>
+                            <img src={logo} alt="logo" />
                             <li><a href="#">Our coffee</a></li>
                             <li><a href="#">For your pleasure</a></li>
                         </ul>
