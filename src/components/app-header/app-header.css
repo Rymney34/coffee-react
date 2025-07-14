@@ -1,5 +1,6 @@
 .head-nav {
-  margin: 20px 0 0 100px;
+  margin: 20px 0 0 149px;
+
 }
 
 nav ul {
@@ -9,7 +10,7 @@ nav ul {
   display: flex;
  
   justify-content: flex-start;
-  gap: 40px;
+  gap: 70px;
 }
 
 nav a {
@@ -17,9 +18,10 @@ nav a {
     color: #ffffff;
     display: block;
     font-family: Merienda;
-    font-size: 12;
+    font-weight: 400;
+    font-size: 12px;
     margin-top: 22px;
  
-    /* filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0)); */
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 
   }
