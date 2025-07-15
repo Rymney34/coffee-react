@@ -1,0 +1,35 @@
+.about{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    height: 520px;
+}
+
+.p1{
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 589px;
+    height: 111px;
+    margin: 40px 0 10px 0
+}
+.p2{
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 589px;
+    height: 111px;
+    margin: 0px 0 100px 0
+}
+
+
+
+h3{
+    font-family: Merienda;
+    font-size: 24px;
+}
+
