@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+}
+
+/* Background image */
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 495px;
+  object-fit: cover; /* ensures it fills nicely */
+  z-index: -1; /* put it behind everything */
+}
+
+/* Centered content */
+.centered-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center it perfectly */
+  z-index: 1;
+  text-align: center;
+}
