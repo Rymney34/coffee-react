@@ -1,28 +1,31 @@
 import './our-best-block.css' 
 
-
 import {Component} from 'react'
 
-class itemBlock extends Component {
+import img1 from '../../images/coffee-1.png'
 
- 
-    render () {
+const ItemBlock = (props) =>  {
 
-        return (
-            
-                 <div className="block-bx">
-                    <img className="bg-image"  alt="background" />
-                    
-                        
-                    <p>Title</p>
-                    <p>£100</p>
+    const {img,title,price} = props
+    return (
+
+             <div className="block-bx">
+                    <img className="prod-image" src={img} alt="background" />
+                    <h3 className='prod-title'>{title}</h3>
+                    <p className='prod-price'>£{price}</p>
                  </div>
-            )
-    }
+        
+            
+        )
+ 
     
+ }
+
+
+        
   
    
    
-}
 
-export default itemBlock;
+
+export default ItemBlock;
