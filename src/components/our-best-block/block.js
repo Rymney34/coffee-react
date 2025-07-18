@@ -1,8 +1,6 @@
 import './our-best-block.css' 
 
-import {Component} from 'react'
 
-import img1 from '../../images/coffee-1.png'
 
 const ItemBlock = (props) =>  {
 

@@ -1,0 +1,25 @@
+.coffee-bg{
+    display: flex;          /* Enables Flexbox */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center;    /* Vertically center the text */
+    width: 100vw;
+    height: 30vh;
+    background-image: url('../../../images/coffee-shop.png'); /* Add your image path here */
+    background-size: cover; /* Ensure the background image covers the div */
+    background-position: center; /* Ensure the image is centered */
+position: relative; /* Important to allow absolute positioning of the header */
+}
+
+#app-header-overlay {
+    position: absolute; /* Overlay it over the background image */
+    margin: 10px 20px; /* Add padding for spacing */
+    z-index: 1;        /* Ensure the header stays on top of the image */
+}
+
+.coffee-bg h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Merienda;
+    margin: 0;
+    z-index: 5; /* Optional, just to make sure h2 stays below the header */
+}

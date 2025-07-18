@@ -1,5 +1,7 @@
 import './app-header.css' 
 import logo from '../../images/logo.png'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 import {Component} from 'react'
 
@@ -17,7 +19,7 @@ class AppHeader extends Component {
                         <ul className='list-nav'>
                             <div></div>
                             <img src={logo} alt="logo" />
-                            <li><a href="#">Our coffee</a></li>
+                            <li><Link to="/ourCoffee">Our coffee</Link></li>
                             <li><a href="#">For your pleasure</a></li>
                         </ul>
                     </nav>

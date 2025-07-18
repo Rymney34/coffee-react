@@ -1,20 +1,21 @@
-
+import React from 'react';
 import './app.css';
-import AppHeader from '../app-header/app-header.js'
-import MainBgBlock from '../main-bg/main-bg-block.js';
-import AboutUsBlock from '../about-us-block/about-us-block.js';
-import OurBestBlock from '../our-best-block/our-best-bloc.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "../homePage/homePage"
+import OurCoffee from '../our-coffee/our-coffee';
+
 function App() {
   return (
-    <div className="App">
-     <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'></link>
-      <MainBgBlock>
-        
-      </MainBgBlock>
-      <AboutUsBlock></AboutUsBlock>
-      <OurBestBlock></OurBestBlock>
- 
-    </div>
+   
+     <Router>
+       <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'></link>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/ourCoffee" element={<OurCoffee />} />
+      </Routes>
+
+      
+    </Router>
   );
 }
 
