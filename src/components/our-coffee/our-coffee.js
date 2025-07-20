@@ -3,7 +3,9 @@ import AppHeader from '../app-header/app-header.js'
 import MainBgBlock from './our-coffee-bg/our-coffee-bg.js';
 import AboutBeans from './about-our-beans/about-our-beans.js';
 
+
 import AppFooter from '../app-footer/app-footer.js';
+import SearchFilter from './search-filter/search-filter.js';
 
 function OurCoffee() {
   return (
@@ -13,6 +15,7 @@ function OurCoffee() {
        
            <MainBgBlock/> 
            <AboutBeans/>
+           <SearchFilter/>
 
      </div>
   );

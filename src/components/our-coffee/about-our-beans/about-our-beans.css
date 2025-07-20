@@ -17,7 +17,9 @@
 }
 
 .AboutBenas1{
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -35,8 +37,8 @@
 }
 .horizontal-line {
   height: 1px;
-  width: 30%;
+  width: 25%;
   background-color: #000000; /* or any color */
-  margin: 10px 0 20px 35%; /* optional spacing */
+/* optional spacing */
 }
 
