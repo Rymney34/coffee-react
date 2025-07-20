@@ -3,8 +3,54 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
+    margin:60px;
+    font-family: Merienda;
 }
 
 .filter{
     display: flex;
+    align-items: center;
+
+}
+
+.filter span{
+    margin: 0 30px 0 0;
+    
+}
+
+.search span {
+    margin: 0 30px 0 0;
+}
+
+.search input {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    filter: drop-shadow(0 0 12px rgb(0, 0, 0));
+    font-family: Merienda;
+    border: 0;
+    border-radius: 5px;
+}
+
+.filter-buttons{
+    display: flex;
+    gap:5px;
+    
+}
+
+.filter-buttons button{
+   background-color: white;
+   border: none;
+   filter: drop-shadow(0 0 0.15rem rgb(0, 0, 0));
+   width: 75px;
+   height: 30px;
+   font-family: Merienda;
+}
+
+.buttons1 {
+    border-radius: 5px 0  0 5px;
+}
+
+.buttons3 {
+    border-radius: 0px 5px  5px 0;
 }

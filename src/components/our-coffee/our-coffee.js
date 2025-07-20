@@ -2,6 +2,7 @@ import React from 'react';
 import AppHeader from '../app-header/app-header.js'
 import MainBgBlock from './our-coffee-bg/our-coffee-bg.js';
 import AboutBeans from './about-our-beans/about-our-beans.js';
+import CoffeeItems from './coffee-items/coffee-items.js';
 
 
 import AppFooter from '../app-footer/app-footer.js';
@@ -16,6 +17,7 @@ function OurCoffee() {
            <MainBgBlock/> 
            <AboutBeans/>
            <SearchFilter/>
+           <CoffeeItems/>
 
      </div>
   );

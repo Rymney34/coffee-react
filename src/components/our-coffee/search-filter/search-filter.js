@@ -15,13 +15,13 @@ const SearchFilter = () => {
                         <div className="filter">
                             <span>Filter</span>
                             <div className="filter-buttons">
-                                <button className="buttons123">
+                                <button className="buttons1">
                                     Brazil
                                 </button >
-                                <button className="buttons123">
+                                <button className="buttons2">
                                     Kenya
                                 </button>
-                                <button className="buttons123">
+                                <button className="buttons3">
                                     Columbia
                                 </button>
 
