@@ -1,0 +1,14 @@
+.coffee-items-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 800px;
+    margin-bottom: 30px;
+}
+
+.coffee-items-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
