@@ -26,7 +26,7 @@ class OurCoffee extends Component {
                      
                      ],
                      term: "",
-                     filter: "all"
+                     filter: ""
                }
     }
 
@@ -47,14 +47,29 @@ class OurCoffee extends Component {
     }
 
    
+   filterPost = (items, filter) => {
+        switch (filter) {
+            case 'Columbia':
+                return items.filter(item => item.country)
+            case 'Brazil' : 
+                return items.filter(item => item.country);
+            case 'Kenya' : 
+                return items.filter(item => item.country);
+            default:
+                return items
+        }
+    }
 
+    onFilterSelect = (filter) => {
+        this.setState ({filter});
+    }
     
 
     render () {
 
-      const {data, term} = this.state;
+      const {data, term, filter} = this.state;
 
-       const visibleData = this.searchItem(data, term);
+       const visibleData = this.filterPost(this.searchItem(data, term), filter);
          return (
             
             <div className="our-coffee">

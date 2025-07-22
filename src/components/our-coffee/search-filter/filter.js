@@ -1,10 +1,10 @@
 import { Component } from "react"
 
 
-class Filter extends Component {
+const Filter = (props) => {
 
     
-    render (){
+    
         const buttonsData = [
                 {clazz: 'buttons1' ,label: 'Brazil', colored: false, id: 1},
                 {clazz: 'buttons2' ,label: 'Columbia', colored: false, id: 2},
@@ -13,7 +13,10 @@ class Filter extends Component {
         const buttons = buttonsData.map(({clazz, label, colored, id}) => {
             return (
                
-                            <button className={clazz} >
+                            <button 
+                                type ="button"
+                                className={clazz} 
+                                 onClick={() => props.onFilterSelect(label)}>
                                 {label}
                             </button >
                 
@@ -31,6 +34,6 @@ class Filter extends Component {
             }
 
   
-}
+
 
 export default Filter

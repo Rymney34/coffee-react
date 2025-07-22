@@ -19,6 +19,14 @@ class SearchFilter extends Component {
         this.setState({term})
         this.props.onUpdateSearch(term)
     }
+    
+     onUpdateFilter = (filter) => {
+        
+        this.setState({filter})
+        this.props.onUpdateFilter(filter)
+    }
+  
+ 
 
 render(){
             return (
