@@ -4,7 +4,7 @@ import MainBgBlock from './our-coffee-bg/our-coffee-bg.js';
 import AboutBeans from './about-our-beans/about-our-beans.js';
 import CoffeeItems from './coffee-items/coffee-items.js';
 
-
+import Filter from './search-filter/filter.js'
 import AppFooter from '../app-footer/app-footer.js';
 import SearchFilter from './search-filter/search-filter.js';
 
@@ -50,11 +50,11 @@ class OurCoffee extends Component {
    filterPost = (items, filter) => {
         switch (filter) {
             case 'Columbia':
-                return items.filter(item => item.country)
+                
             case 'Brazil' : 
-                return items.filter(item => item.country);
+                
             case 'Kenya' : 
-                return items.filter(item => item.country);
+                return items.filter(item => item.country === filter);
             default:
                 return items
         }
@@ -77,7 +77,7 @@ class OurCoffee extends Component {
                
                   <MainBgBlock/> 
                   <AboutBeans/>
-                  <SearchFilter onUpdateSearch={this.onUpdateSearch}/>
+                  <SearchFilter onUpdateSearch={this.onUpdateSearch} filter = {filter} onFilterSelect = {this.onFilterSelect} />
                   
                   <CoffeeItems data = {visibleData}/>
                   <AppFooter/>

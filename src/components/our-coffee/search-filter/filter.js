@@ -8,7 +8,8 @@ const Filter = (props) => {
         const buttonsData = [
                 {clazz: 'buttons1' ,label: 'Brazil', colored: false, id: 1},
                 {clazz: 'buttons2' ,label: 'Columbia', colored: false, id: 2},
-                {clazz: 'buttons3' ,label: 'Kolumbia', colored: true, id: 3}
+                {clazz: 'buttons2' ,label: 'Kenya', colored: false, id: 3},
+                {clazz: 'buttons3' ,label: 'All', colored: true, id: 4}
             ]
         const buttons = buttonsData.map(({clazz, label, colored, id}) => {
             return (

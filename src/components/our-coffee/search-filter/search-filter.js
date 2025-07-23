@@ -10,7 +10,8 @@ class SearchFilter extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            term: ''
+            term: '',
+            filter:''
         }
     }
 
@@ -20,12 +21,7 @@ class SearchFilter extends Component {
         this.props.onUpdateSearch(term)
     }
     
-     onUpdateFilter = (filter) => {
-        
-        this.setState({filter})
-        this.props.onUpdateFilter(filter)
-    }
-  
+     
  
 
 render(){
@@ -42,8 +38,10 @@ render(){
                                         value = {this.state.term} 
                                         onChange={this.onUpdateSearch}
                                     />
+                                   
                                 </div>
-                                <Filter/>
+                                 <Filter filter = {this.state.filter} onFilterSelect = {this.props.onFilterSelect} />
+                               
                                 {/* <div className="filter">
                                     <span>Filter</span>
                                     <div className="filter-buttons">
