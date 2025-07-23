@@ -5,15 +5,17 @@ import img3 from '../../../images/coffee-3.png'
 
 const CoffeeItems = ({data}) => {
 
+
          const elements = data.map(item => {
         const {id, ...itemProps} = item;
 
          return(
-                <CoffeeItemBlock  
+                <CoffeeItemBlock   
                             img={img3}
                             title={itemProps.title}
                             country={itemProps.country}
-                            price={itemProps.price}/>
+                            price={itemProps.price}
+                           />
          )
         
         })

@@ -1,0 +1,25 @@
+.about-item-block{
+     display: flex;
+      justify-content: center;
+       margin: 70px 0px 50px 0px;
+}
+
+.about-item-block .imgAboutBeans {
+    width: 392px;
+    height: 355px;
+}
+
+.details-block{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.details-block .paragraph1{
+   text-align: left;
+   margin-bottom: 0px
+}
+
+.h22{
+    margin-top:0;
+}

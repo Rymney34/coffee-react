@@ -1,13 +1,19 @@
 import './coffee-item-block.css' 
 
-
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const CoffeeItemBlock = (props) =>  {
 
+  const navigate = useNavigate();
+        function Page (){
+              navigate("/page1");  
+              console.log("page")
+        }
     const {img,title, country,price} = props
     return (
-
-             <div className="block-bx1">
+   
+             <div className="block-bx1"  onClick={Page}>
                     <img className="prod-image" src={img} alt="background" />
                     <h3 className='prod-title'>{title}</h3>
                     <div className="country-price">
@@ -16,7 +22,7 @@ const CoffeeItemBlock = (props) =>  {
                     </div>
                    
               </div>
-        
+    
             
         )
  
