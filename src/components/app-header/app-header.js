@@ -18,9 +18,9 @@ class AppHeader extends Component {
                    
                         <ul className='list-nav'>
                             <div></div>
-                            <Link to="/Home" className='abc'><img src={logo} alt="logo"/></Link>
+                            <Link to="/" className='abc'><img src={logo} alt="logo"/></Link>
                             <li><Link to="/ourCoffee">Our coffee</Link></li>
-                            <li><a href="#">For your pleasure</a></li>
+                            <li><Link to="/forPleasure">For your pleasure</Link></li>
                         </ul>
                     </nav>
                 </div>

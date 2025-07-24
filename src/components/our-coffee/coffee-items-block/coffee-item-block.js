@@ -4,13 +4,21 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 const CoffeeItemBlock = (props) =>  {
-
+  const {img,title, country,price} = props
   const navigate = useNavigate();
         function Page (){
-              navigate("/page1");  
+              navigate("/page1", 
+                  {
+                  state:{
+                        title,
+                        country,
+                        price,
+                   }});  
               console.log("page")
         }
-    const {img,title, country,price} = props
+
+       
+  
     return (
    
              <div className="block-bx1"  onClick={Page}>

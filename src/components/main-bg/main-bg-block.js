@@ -1,16 +1,15 @@
 import './main-bg-block.css' 
 import beansLogo from '../../images/Beanslogo.png'
-import mainbg from '../../images/Mainbg.jpg'
+
 
 import AppHeader from '../app-header/app-header.js'
 
 
 import {Component} from 'react'
 
-class MainBgBlock extends Component {
+const MainBgBlock = (props) => {
 
- 
-    render () {
+const {mainbg} = props;
 
         return (
             
@@ -33,6 +32,6 @@ class MainBgBlock extends Component {
   
    
    
-}
+
 
 export default MainBgBlock;
