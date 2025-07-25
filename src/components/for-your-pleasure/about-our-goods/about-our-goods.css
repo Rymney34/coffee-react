@@ -1,0 +1,44 @@
+.paragraph1{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: Merienda;
+    text-align: center;
+    
+}
+
+.paragraph-block{
+    text-align: center;
+    margin-left: 70px;
+    width: 350px;
+}
+
+.paragraph-block h2{
+    font-family: Merienda;
+}
+
+.AboutBenas1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about-beans-block{
+    display: flex;
+    /* width: 350px; */
+    margin: 70px 250px 50px 250px;
+      
+}
+
+.imgAboutBeans{
+    width: 272px;
+    height: 355px;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+.horizontal-line {
+  height: 1px;
+  width: 25%;
+  background-color: #000000; /* or any color */
+/* optional spacing */
+}
+

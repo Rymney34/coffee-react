@@ -2,9 +2,10 @@ import beansLogo from '../../../images/Beanslogo.png'
 
 import './about-our-beans.css'
 
-import aboutOurBeans from '../../../images/girl.jpg'
 
-const AboutBeans = () => {
+
+const AboutBeans = (props) => {
+    const {aboutOurBeans, title} = props
 
         return (
             
@@ -13,7 +14,7 @@ const AboutBeans = () => {
                         <img className="imgAboutBeans" src={aboutOurBeans} alt="About Beans image"/>
                   
                         <div className="paragraph-block">
-                            <h2>About our beans</h2>
+                            <h2>{title}</h2>
                             <img  className="beans-logo1" src={beansLogo} alt='beans-logo'/>
 
                             <p className="paragraph1">
