@@ -1,6 +1,6 @@
 import './about-us-block.css' 
 import beansLogo from '../../images/Beanslogo.png'
-
+import { Link, Element } from "react-scroll";
 import {Component} from 'react'
 
 class AboutUsBlock extends Component {
@@ -10,7 +10,8 @@ class AboutUsBlock extends Component {
 
         return (
             
-                <div className="about">
+                <div className="about" id="down" >
+                     <Element name="section1" >
                     <h3>About Us</h3>
                     <img  src={beansLogo} alt='beans-logo'/>
                     <p className='p1' >
@@ -26,6 +27,7 @@ class AboutUsBlock extends Component {
                         horrible but confined day end marriage. Eagerness furniture set preserved far
                         recommend. Did even but nor are most gave hope. Secure active living depend sonrepair day ladies now.
                     </p>
+                    </Element>
                 </div>
             )
     }

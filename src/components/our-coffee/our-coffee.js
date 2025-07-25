@@ -1,10 +1,8 @@
 
-import AppHeader from '../app-header/app-header.js'
 import MainBgBlock from './our-coffee-bg/our-coffee-bg.js';
 import AboutBeans from './about-our-beans/about-our-beans.js';
 import CoffeeItems from './coffee-items/coffee-items.js';
 
-import Filter from './search-filter/filter.js'
 import AppFooter from '../app-footer/app-footer.js';
 import SearchFilter from './search-filter/search-filter.js';
 

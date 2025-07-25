@@ -2,8 +2,8 @@
     display: flex;          /* Enables Flexbox */
     justify-content: center; /* Horizontally center the text */
     align-items: center;    /* Vertically center the text */
-    width: 100vw;
-    height: 30vh;
+    
+    
     
      /* Important to allow absolute positioning of the header */
 }

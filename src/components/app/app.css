@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -13,3 +14,6 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
